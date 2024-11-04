@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Dongle:wght@300;400;700&family=Galada&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>CineMoods｜気分に合わせて映画をおすすめ</title>
+</head>
+<body>
+    <header>
+        <img src="img/icon.png" alt="">
+        <p class="logo">CineMoods</p>
+    </header>
+    <div class="nyuryoku">
+        <h1>あなたの気分にぴったりの映画を見つけよう！</h1>
+        <textarea id="text" placeholder="今、どんな気分？思いつくままに書いてみましょう。" rows="4" cols="50"></textarea>
+        <button id="analyzeButton">気持ちを分析</button>
+    </div>
+    <div class="moods">
+        <p>あなたの今の気持ちは…</p>
+        <pre id="output"></pre>
+    </div>
+    <div class="kekka">
+        <h2>そんなあなたにおすすめの映画</h2>
+        <div id="recommendations"></div>
+    </div>
+
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

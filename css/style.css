@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    background-color: #d48383;
+    height: 5rem;
+}
+
+header img{
+    width: 80px;
+    align-items: center;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+.logo{
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-left: 10px;
+    line-height: 6rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#text{
+    display: block;
+    margin: 30px auto;
+    width: 70%;
+    font-size: 20px;
+}
+
+#analyzeButton{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 9999px;
+    max-width: 300px;
+    padding: 10px 25px;
+    font-family: "Noto Sans Japanese";
+    color: white;
+    line-height: 2;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-size: 17px;
+    background: linear-gradient(270deg, #a6d2e7 0%, #aab5ec 25%, #daaeeb 51%, #ed9aba 100%);
+    background-position: 1% 50%;
+    background-size: 200% auto;
+    transition: all 0.3s ease-out;
+    border: none;
+}
+#analyzeButton:hover {
+    color: #fff;
+    background-position: 99% 50%;
+}
+#analyzeButton:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.moods{
+    background-color: #fff0f0;
+    width: 90%;
+    margin: 50px auto;
+    height: 11rem;
+    padding: 20px;
+}
+
+#output{
+    display: flex;           
+    gap: 10px;               
+    justify-content: center; 
+}
+
+#output p {
+    text-align: center;      
+    margin: 5px;               
+    padding: 5px;           
+    background-color: #ffffff; 
+    border-radius: 8px;
+    height: 6.9rem;  
+}
+
+#output span{
+    font-size: 35px;
+}
+
+#recommendations img{
+    width: 90%;
+}
+
+#recommendations {
+    display: flex;           /* 横並びに配置 */          
+    flex-wrap: wrap;         /* 画面が狭くなったときに折り返す */
+    justify-content: center; /* 中央寄せ */
+}
+
+.item_box {
+    padding: 10px;
+    width: 25%;             /* カードの幅を固定 */
+    text-align: center;
+}
+
+.item_box * {
+    box-sizing: border-box;
+  }
+  
+  .item_link {
+    display: block;
+  }
+  
+  .item_content {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .item_image img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+  
+  .item_mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+  }
+  
+  .item_mask-text {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .item_text {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .item_box .item_link:hover .item_mask {
+    opacity: 1;
+  }
+
+h4{
+    font-size: 15px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  h2::before,
+  h2::after {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: #b51f1f;
+  }
+  h2::before {
+    margin-right: 20px;
+  }
+  h2::after {
+    margin-left: 20px;
+  }
